@@ -1,0 +1,14 @@
+.ingredient-list{
+
+}
+
+.ingredient{
+    border-radius: 3px;
+    background-color: grey;
+    color: black;
+    padding: 2px 3px;
+}
+
+.selected{
+    background-color: aquamarine;
+}
