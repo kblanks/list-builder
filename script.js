@@ -40,3 +40,22 @@ function RefreshOutput(){
             .appendTo(li);
     });
 }
+
+function FindCombos(){
+    var combi = [];
+    var temp = [];
+    var arrLen = Math.pow(2, arr.length);
+
+    for (var i = 0; i < arrLen; i++){
+        temp = []
+        for (var j = 0; j < arrLen; j++){
+            if ((i & Math.pow(2,j))){
+                temp.push(arr[j]);
+            }
+        }
+        if (temp != ""){
+            combi.push(temp);
+        }
+    }
+    //console.log(combi.join("\n"));
+}
